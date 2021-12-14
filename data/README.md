@@ -1,0 +1,2 @@
+colloqial-lexicon.csv -> https://github.com/nasalsabila/kamus-alay/blob/master/colloquial-indonesian-lexicon.csv
+fully-labeled-dataset.csv and unlabel-filtered-dataset.csv -> https://github.com/strwrd/dataset-sarcasm-sentiment-analysis and http://dx.doi.org/10.21609/jiki.v14i1.812
