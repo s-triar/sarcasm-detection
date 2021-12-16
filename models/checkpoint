@@ -1,0 +1,2 @@
+model_checkpoint_path: "tf_text_weight_data_paper_5"
+all_model_checkpoint_paths: "tf_text_weight_data_paper_5"

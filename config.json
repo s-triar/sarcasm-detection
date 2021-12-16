@@ -1,0 +1,41 @@
+{
+    "1":{
+        "bidi_1":{"lstm":32, "retrun_sequence":true},
+        "bidi_2":{"lstm":16, "retrun_sequence":true},
+        "conv1d_1":{"node":8,"kernel":5,"activation":"relu"},
+        "globalmaxpool1d":{"default":true},
+        "dense_1":{"node":2,"activation":"relu"},
+        "dense_2":{"node":1,"activation":"sigmoid"}
+    },
+    "2":{
+        "bidi_1":{"lstm":128, "retrun_sequence":true},
+        "conv1d_1":{"node":8,"kernel":5,"activation":"relu"},
+        "globalmaxpool1d":{"default":true},
+        "dense_1":{"node":2,"activation":"relu"},
+        "dense_2":{"node":1,"activation":"sigmoid"}
+    },
+    "3":{
+        "bidi_1":{"lstm":128, "retrun_sequence":true},
+        "bidi_2":{"lstm":32, "retrun_sequence":true},
+        "conv1d_1":{"node":8,"kernel":5,"activation":"relu"},
+        "globalmaxpool1d":{"default":true},
+        "dense_1":{"node":2,"activation":"relu"},
+        "dense_2":{"node":1,"activation":"sigmoid"}
+    },
+    "4":{
+        "bidi_1":{"lstm":256, "retrun_sequence":true},
+        "bidi_2":{"lstm":128, "retrun_sequence":true},
+        "bidi_3":{"lstm":32, "retrun_sequence":true},
+        "conv1d_1":{"node":8,"kernel":5,"activation":"relu"},
+        "globalmaxpool1d":{"default":true},
+        "dense_1":{"node":2,"activation":"relu"},
+        "dense_2":{"node":1,"activation":"sigmoid"}
+    },
+    "5":{
+        "bidi_1":{"lstm":32, "retrun_sequence":true},
+        "conv1d_1":{"node":8,"kernel":5,"activation":"relu"},
+        "globalmaxpool1d":{"default":true},
+        "dense_1":{"node":2,"activation":"relu"},
+        "dense_2":{"node":1,"activation":"sigmoid"}
+    }
+}

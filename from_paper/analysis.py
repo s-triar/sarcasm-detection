@@ -9,4 +9,7 @@ path_data = os.path.join(path_this_file,"..","data",file_data)
 print(path_data)
 df = pd.read_csv(path_data,sep="|")
 print(df)
-print(df.iloc[0,[0,1]])
+# print(df.iloc[0,[0,1]])
+
+hasil = df[df['id']==1191320090651713536]
+print(hasil)

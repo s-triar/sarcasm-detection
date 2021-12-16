@@ -28,6 +28,16 @@ def check_with_kkbi(word):
       r = session.get(url = URL+word)
       txt = r.text
     #   print(txt)
+      beku = txt.find('Akun Dibekukan')
+    #   print("beku", beku)
+      if(beku!=-1):
+          raise ValueError("Akun KBBI Dibekukan")
+      max_pencarian = txt.find('Pencarian Anda telah mencapai batas maksimum dalam sehari')
+      if(max_pencarian!=-1):
+          raise ValueError('Pencarian Anda telah mencapai batas maksimum dalam sehari')
+      failed = txt.find('Terjadi Kesalahan')
+      if(failed!=-1):
+          raise ValueError('Terjadi Kesalahan')
       cls_res_area = txt.find('Entri tidak ditemukan.')
       return cls_res_area==-1
   
